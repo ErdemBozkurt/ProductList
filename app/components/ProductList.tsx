@@ -33,7 +33,8 @@ const ProductList: React.FC<VerticalProductListProps> = ({ products }) => {
             </div>
             <div className="info">
               <h3>{product.name}</h3>
-              <h1>{product.price} TL <span>{product.countOfPrices} satıcı &#10095;</span></h1>
+              <h1>{new Intl.NumberFormat('tr-TR').format(product.price)} <span> TL</span></h1>
+              <p>{product.countOfPrices} satıcı &#10095;</p>
               <p>{product.followCount} takip</p>
             </div>
           </Link>

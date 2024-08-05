@@ -43,7 +43,7 @@ export default function Index() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="loading">Yükleniyor...</div>;
   }
 
   if (error) {

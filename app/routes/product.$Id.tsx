@@ -41,7 +41,7 @@ const ProductDetailPage: React.FC = () => {
   };
 
   if (loading) {
-    return <div>Yükleniyor...</div>;
+    return <div className="loading">Yükleniyor...</div>;
   }
 
   if (error) {
@@ -91,7 +91,7 @@ const ProductDetailPage: React.FC = () => {
         </div>
         <div className='price-info'>
           <p className='prices'>{countOfPrices} satıcı içinde {freeShipping ? 'kargo dahil' : 'kargo hariç'} en ucuz fiyat seçeneği</p>
-          <p className='price'>{price} TL</p>
+          <p className='price'>{new Intl.NumberFormat('tr-TR').format(price)} TL</p>
           <p className='cargo'>{freeShipping ? 'Ücretsiz kargo' : 'Ücretli kargo'}</p>
           <p className='update'>Son Güncelleme: {lastUpdate}</p>
         </div>
