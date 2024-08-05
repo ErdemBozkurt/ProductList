@@ -49,26 +49,26 @@ Depolama Seçimi: Kullanıcılar depolama seçenekleri arasında seçim yapabili
 
 # 📂 Proje Yapısı
 project-root/
-├── app/
-│   ├── components/
-│   │   ├── HorizontalProductList.tsx
-│   │   ├── ProductList.tsx
-│   │   └── StarRating.tsx
-│   ├── routes/
-│   │   ├── _index.tsx
-│   │   └── product.$Id.tsx
-│   ├── services/
-│   │   └── productService.tsx
-│   └── styles/
-│       ├── main.css
-│       ├── ProductDetail.css
-│       ├── ProductList.css
-│       └── StarRating.css
-├── public/
-│   └── favicon.ico
-├── tailwind.css
-├── package.json
-└── README.md
+  app/
+    components/
+      HorizontalProductList.tsx
+      ProductList.tsx
+      StarRating.tsx
+    routes/
+      _index.tsx
+      product.$Id.tsx
+    services/
+      productService.tsx
+    styles/
+      main.css
+      ProductDetail.css
+      ProductList.css
+      StarRating.css
+  public/
+    favicon.ico
+  tailwind.css
+  package.json
+  README.md
 
 # 🤝 Katkıda Bulunanlar
 Erdem Bozkurt
