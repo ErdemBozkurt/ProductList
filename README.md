@@ -1,40 +1,74 @@
-# Welcome to Remix!
+# Örnek Ürün Listeleme Projesi
+Bu proje, pazar yerleri gibi ürünleri karşılaştırma, kullanıcıların en iyi fiyatları ve özellikleri görmelerini sağlama amacı taşıyan bir web uygulamasıdır. Uygulama, React ve Remix ile geliştirilmiştir ve TypeScript kullanılarak yazılmıştır.
 
-- 📖 [Remix docs](https://remix.run/docs)
+# 📖 İçindekiler
+Özellikler
+Gereksinimler
+Kurulum
+Kullanım
+Proje Yapısı
+Katkıda Bulunanlar
+Lisans
 
-## Development
+# ✨ Özellikler
+Yatay ve Dikey Ürün Listesi: Ürünleri yatay slider ile ve dikey olarak sayfalama ile listeleme.
+Ürün Detayları: Kullanıcılar ürünlerin detaylarını görebilir ve farklı depolama seçenekleri arasında seçim yapabilir.
+Yıldız Derecelendirme: Ürünlerin değerlendirme puanlarını yıldızlar şeklinde gösterme.
+Dinamik Veri Çekme: Ürün verilerini JSON API üzerinden dinamik olarak çekme.
+Responsive Tasarım: Mobil ve masaüstü uyumlu kullanıcı arayüzü.
 
-Run the dev server:
+# 🛠️ Gereksinimler
+Node.js (v14 veya üzeri)
+npm veya yarn
+Git
 
-```shellscript
+# ⚙️ Kurulum
+Aşağıdaki adımları takip ederek projeyi kendi bilgisayarınızda çalıştırabilirsiniz:
+
+1- Depoyu klonlayın:
+git clone https://github.com/kullanici-adiniz/proje-adi.git
+cd proje-adi
+
+2- Gerekli paketleri yükleyin:
+npm install
+veya
+yarn install
+
+3- Uygulamayı başlatın:
 npm run dev
-```
+veya
+yarn dev
 
-## Deployment
+4- Tarayıcıda açın:
+Projeyi çalıştırdıktan sonra, tarayıcınızda http://localhost:3000 adresine gidin.
 
-First, build your app for production:
+# 🚀 Kullanım
+Ana Sayfa: Ürünleri yatay slider ve dikey liste olarak görüntüleyin.
+Ürün Detay Sayfası: Bir ürüne tıklayarak detaylarını ve depolama seçeneklerini görüntüleyin.
+Depolama Seçimi: Kullanıcılar depolama seçenekleri arasında seçim yapabilir ve fiyatları karşılaştırabilir.
 
-```sh
-npm run build
-```
+# 📂 Proje Yapısı
+project-root/
+├── app/
+│   ├── components/
+│   │   ├── HorizontalProductList.tsx
+│   │   ├── ProductList.tsx
+│   │   └── StarRating.tsx
+│   ├── routes/
+│   │   ├── _index.tsx
+│   │   └── product.$Id.tsx
+│   ├── services/
+│   │   └── productService.tsx
+│   └── styles/
+│       ├── main.css
+│       ├── ProductDetail.css
+│       ├── ProductList.css
+│       └── StarRating.css
+├── public/
+│   └── favicon.ico
+├── tailwind.css
+├── package.json
+└── README.md
 
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+# 🤝 Katkıda Bulunanlar
+Erdem Bozkurt
