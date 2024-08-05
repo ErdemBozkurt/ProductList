@@ -1,0 +1,50 @@
+
+/*****************/
+.product-detail .heading { position: relative; padding: 15px 0; }
+.product-detail .heading h2 { font-weight: bold; color:#999; margin: 0; padding: 0; font-size: 15px; }
+.product-detail .heading h1 { font-weight: bold; color:#333; margin: 0; padding: 0; font-size: 18px; }
+.product-detail .heading p { font-weight: bold; color:#333; font-size: 14px; background: #fff7c8; padding: 3px 5px; display: inline-block; }
+
+.product-detail .img { display: flex; justify-content: center; height: 350px; }
+.product-detail .img img{ max-width: 100%; height: auto; max-height: 350px; }
+
+.product-detail .options { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 20px 0; background: #f5f5f5; padding: 10px 0; }
+.product-detail .options h4{ width: 100%; text-align: center; font-weight: bold; color:#999;}
+.storage-option { padding: 10px 20px; border: 1px solid #ccc; background-color: #f9f9f9; cursor: pointer; transition: background-color 0.3s, border-color 0.3s;
+  border-radius: 5px; font-size: 16px;}
+.storage-option:hover { background-color: #f1f1f1; }
+.storage-option.selected { background-color: #007bff; color: #fff; border-color: #007bff; }
+
+.product-detail .price-info { display: flex; flex-direction: column; align-items: center; font-weight: bold; }
+.product-detail .price-info .prices { font-size: 14px; color: #333; margin: 0; padding: 0; }
+.product-detail .price-info .price { font-size: 28px; color: #333; margin: 0; padding: 0; }
+.product-detail .price-info .cargo { font-size: 14px; color: #2ea100; margin: 0; padding: 0; }
+.product-detail .price-info .update { font-size: 14px; color: #999; margin: 0; padding: 0; }
+
+/**
+
+<div className='container'>
+      <div className="product-detail">
+        <div className='heading'>
+          <h2>{mkName}</h2>
+          <h1>{productName}</h1>
+          <p>{badge}</p>
+          <StarRating rating={rating} />
+        </div>
+        <div className="img">
+          <img src={imageUrl} alt={productName} />
+        </div>
+        <div className='options'>
+          <h4>Kapasite seçenekleri:</h4>
+          {storageOptions.join(', ')}
+        </div>
+        <div className='price-info'>
+          <p className='prices'>{countOfPrices} satıcı içinde {freeShipping ? 'kargo dahil' : 'kargo hariç'} en ucuz fiyat seçeneği</p>
+          <p className='price'>{price} TL</p>
+          <p className='cargo'>{freeShipping ? 'Ücretsiz kargo' : 'Ücretli kargo'}</p>
+          <p className='update'>Son Güncelleme: {lastUpdate}</p>
+        </div>
+      </div>
+    </div>
+
+**/
